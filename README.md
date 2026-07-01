@@ -1,105 +1,108 @@
 # AI Researcher Hub
 
 <p align="center">
-  <strong>Curated Open-Source Projects for Automated Research, Deep Research Agents, Paper QA, Literature Review, and Paper Engineering.</strong>
+  <strong>自动科研项目聚合仓库 · AI Research Agent 导航 · Paper Engineering Hub</strong>
 </p>
 
 <p align="center">
-  <a href="docs/AUTO_RESEARCH_PROJECTS.md">Auto Research Projects</a> ·
-  <a href="docs/AI_RESEARCH_REPOS.md">AI Research Repos</a> ·
-  <a href="#featured-projects">Featured Projects</a> ·
-  <a href="#roadmap">Roadmap</a>
+  <a href="#简体中文">🇨🇳 简体中文</a> ·
+  <a href="#english">🇺🇸 English</a>
+</p>
+
+<p align="center">
+  <a href="docs/AUTO_RESEARCH_PROJECTS.md">自动科研项目索引</a> ·
+  <a href="docs/AI_RESEARCH_REPOS.md">AI Research 仓库索引</a> ·
+  <a href="#精选项目">精选项目</a> ·
+  <a href="#推荐组合">推荐组合</a> ·
+  <a href="#路线图">路线图</a>
 </p>
 
 ---
 
-## What is this?
+<a id="简体中文"></a>
 
-**AI Researcher Hub** 是一个面向自动科研的开源项目聚合仓库，重点收集当前比较好的、高关注度的：
+## 简体中文
 
-- Deep Research Agent
-- AI Research Assistant
-- Paper QA / Scientific RAG
-- Literature Review / Survey Agent
-- Code & Experiment Agent
-- Research Workflow / Multi-Agent Framework
-- RAG Evaluation / Agent Benchmark
+> **AI Researcher Hub** 旨在收集、筛选和跟踪当前高质量、高关注度、真正服务科研流程的自动科研开源项目。
 
-它不是普通 AI 工具链接大全，而是一个可持续维护的：
+它不是普通的 AI 工具链接大全，而是一个面向研究者的：
 
-> **自动科研项目聚合仓库 + AI Research Workflow Hub + Paper Engineering Hub**
+<table>
+  <tr>
+    <td><strong>自动科研项目聚合仓库</strong><br/>收集 Deep Research、Paper QA、自动综述、科研 Agent、代码实验 Agent。</td>
+    <td><strong>AI Research Workflow Hub</strong><br/>整理从文献调研、论文阅读、实验复现到评测归档的完整科研工作流。</td>
+    <td><strong>Paper Engineering Hub</strong><br/>关注 baseline 复现、代码阅读、实验管理、指标评测和论文工程化。</td>
+  </tr>
+</table>
 
-目标是帮助研究者快速找到可以用于：**查文献、读论文、写综述、做调研、跑实验、复现 baseline、评估结果、构建个人科研助手**的开源项目。
+### 这个仓库解决什么问题？
 
----
+现在自动科研相关项目很多，但信息分散、质量参差不齐、维护状态变化快。这个仓库希望回答三个问题：
 
-## Featured Projects
-
-> Star 数和活跃度变化很快，这里优先放“高关注 + 与自动科研强相关 + 值得重点跟踪”的项目。更完整列表见 [`docs/AUTO_RESEARCH_PROJECTS.md`](docs/AUTO_RESEARCH_PROJECTS.md)。
-
-### Deep Research / Automated Report Generation
-
-| Project | Repository | What it is good for |
-|---|---|---|
-| **STORM** | [stanford-oval/storm](https://github.com/stanford-oval/storm) | Topic research, outline synthesis, cited long-form report generation |
-| **GPT Researcher** | [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) | Autonomous web/local research, source-grounded reports, research automation |
-| **Open Deep Research** | [langchain-ai/open_deep_research](https://github.com/langchain-ai/open_deep_research) | LangGraph-based deep research agent, configurable research workflow |
-| **Deep Research** | [dzhng/deep-research](https://github.com/dzhng/deep-research) | Minimal deep research agent, good for understanding core research-agent logic |
-| **Alibaba DeepResearch** | [Alibaba-NLP/DeepResearch](https://github.com/Alibaba-NLP/DeepResearch) | Web agent, search agent, agentic RAG, deep research system reference |
-| **Skywork DeepResearchAgent** | [SkyworkAI/DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) | Hierarchical multi-agent deep research workflow |
-
-### Paper QA / Scientific RAG
-
-| Project | Repository | What it is good for |
-|---|---|---|
-| **PaperQA2** | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | Scientific paper QA, citation-grounded answers, local document research |
-| **OpenPaper** | [khoj-ai/openpaper](https://github.com/khoj-ai/openpaper) | Paper reading and research assistance |
-| **LlamaIndex** | [run-llama/llama_index](https://github.com/run-llama/llama_index) | Building paper libraries, research knowledge bases, document RAG |
-| **LangChain** | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | General LLM application, RAG, tools, agent integration |
-| **R2R** | [SciPhi-AI/R2R](https://github.com/SciPhi-AI/R2R) | Production-oriented RAG engine for private knowledge bases |
-
-### Research Workflow / Multi-Agent Frameworks
-
-| Project | Repository | What it is good for |
-|---|---|---|
-| **LangGraph** | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Stateful and controllable research-agent workflow graphs |
-| **AutoGen** | [microsoft/autogen](https://github.com/microsoft/autogen) | Multi-agent research discussion, reviewer/coder/researcher collaboration |
-| **CrewAI** | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Lightweight role-based agent workflow prototyping |
-| **MetaGPT** | [FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | Role-based task decomposition and structured multi-agent workflow |
-| **Dify** | [langgenius/dify](https://github.com/langgenius/dify) | Visual LLM workflow, RAG app, research assistant prototype |
-
-### Code / Experiment / Paper Engineering Agents
-
-| Project | Repository | What it is good for |
-|---|---|---|
-| **OpenHands** | [All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands) | Coding agent for reading, editing, testing, and iterating repositories |
-| **Aider** | [Aider-AI/aider](https://github.com/Aider-AI/aider) | AI pair programming for research code and experiment scripts |
-| **SWE-agent** | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | Repository-level bug fixing and test-driven code automation |
-
-### Evaluation / Benchmark / Quality Control
-
-| Project | Repository | What it is good for |
-|---|---|---|
-| **RAGAS** | [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | RAG answer quality, retrieval quality, faithfulness evaluation |
-| **promptfoo** | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | LLM app regression tests, prompt evaluation, red-team checks |
-| **DeepEval** | [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | Unit-test-like evaluation for LLM and RAG applications |
-| **OpenAI Evals** | [openai/evals](https://github.com/openai/evals) | Custom evaluation tasks for models and research agents |
-| **lm-evaluation-harness** | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Standard LLM benchmark evaluation |
+1. **哪些开源项目真正能帮助科研？**
+2. **哪些项目适合本地运行、私有论文库、复现实验？**
+3. **如何把 Deep Research、Paper QA、Agent、RAG、Coding Agent 组合成真实可用的科研工作流？**
 
 ---
 
-## Core Indexes
+## 精选项目
 
-| File | Purpose |
-|---|---|
-| [`docs/AUTO_RESEARCH_PROJECTS.md`](docs/AUTO_RESEARCH_PROJECTS.md) | 自动科研项目聚合索引：Deep Research、Paper QA、自动综述、Research Agent、Coding Agent、评测工具 |
-| [`docs/AI_RESEARCH_REPOS.md`](docs/AI_RESEARCH_REPOS.md) | AI research 常用仓库索引：训练框架、LLM、RAG、多模态、语音、评测、工具链 |
+> 更完整的列表见 [`docs/AUTO_RESEARCH_PROJECTS.md`](docs/AUTO_RESEARCH_PROJECTS.md)。Star 数和活跃度会变化，这里优先展示“高关注 + 强科研相关 + 值得重点跟踪”的项目。
+
+### Deep Research / 自动调研与报告生成
+
+| 项目 | 仓库 | 适合用途 |
+|---|---|---|
+| **STORM** | [stanford-oval/storm](https://github.com/stanford-oval/storm) | 主题调研、大纲生成、带引用的长文报告 |
+| **GPT Researcher** | [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) | Web / local deep research、资料检索、来源追踪、报告生成 |
+| **Open Deep Research** | [langchain-ai/open_deep_research](https://github.com/langchain-ai/open_deep_research) | 基于 LangGraph 的可配置 Deep Research Agent |
+| **Deep Research** | [dzhng/deep-research](https://github.com/dzhng/deep-research) | 极简 deep research agent，适合理解核心逻辑 |
+| **Alibaba DeepResearch** | [Alibaba-NLP/DeepResearch](https://github.com/Alibaba-NLP/DeepResearch) | Web Agent、Search Agent、Agentic RAG、Deep Research 系统参考 |
+| **Skywork DeepResearchAgent** | [SkyworkAI/DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) | 层级多智能体科研任务执行 |
+
+### Paper QA / Scientific RAG / 论文知识库
+
+| 项目 | 仓库 | 适合用途 |
+|---|---|---|
+| **PaperQA2** | [Future-House/paper-qa](https://github.com/Future-House/paper-qa) | 科学论文问答、引用支撑回答、本地文献库 QA |
+| **OpenPaper** | [khoj-ai/openpaper](https://github.com/khoj-ai/openpaper) | 论文阅读、文献辅助分析 |
+| **LlamaIndex** | [run-llama/llama_index](https://github.com/run-llama/llama_index) | 构建论文库、实验日志库、代码文档 RAG |
+| **LangChain** | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | RAG、工具调用、Agent 应用集成 |
+| **R2R** | [SciPhi-AI/R2R](https://github.com/SciPhi-AI/R2R) | 面向私有知识库的服务化 RAG 引擎 |
+
+### Research Agent / 多智能体科研工作流
+
+| 项目 | 仓库 | 适合用途 |
+|---|---|---|
+| **LangGraph** | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 有状态、可控、可恢复的科研 Agent 工作流 |
+| **AutoGen** | [microsoft/autogen](https://github.com/microsoft/autogen) | 多智能体科研讨论、Reviewer / Coder / Researcher 协作 |
+| **CrewAI** | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 轻量角色式 Agent 编排 |
+| **MetaGPT** | [FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 角色分工、任务拆解、结构化多 Agent 流程 |
+| **Dify** | [langgenius/dify](https://github.com/langgenius/dify) | 可视化 RAG / Agent 应用入口 |
+
+### Code Agent / 实验复现 / Paper Engineering
+
+| 项目 | 仓库 | 适合用途 |
+|---|---|---|
+| **OpenHands** | [All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands) | 读代码、改代码、跑测试、迭代实验仓库 |
+| **Aider** | [Aider-AI/aider](https://github.com/Aider-AI/aider) | 交互式修改研究代码和实验脚本 |
+| **SWE-agent** | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | 仓库级自动修复、测试驱动代码修改 |
+
+### Evaluation / 自动科研质量控制
+
+| 项目 | 仓库 | 适合用途 |
+|---|---|---|
+| **RAGAS** | [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | RAG 检索质量、回答一致性、忠实度评测 |
+| **promptfoo** | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | LLM 应用回归测试、Prompt 评测、红队测试 |
+| **DeepEval** | [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | 类单元测试的 LLM / RAG 应用评测 |
+| **OpenAI Evals** | [openai/evals](https://github.com/openai/evals) | 自定义模型与科研 Agent 评测任务 |
+| **lm-evaluation-harness** | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | 标准 LLM benchmark 评测 |
 
 ---
 
-## Recommended Research Stacks
+## 推荐组合
 
-### 1. Automated Literature Review
+### 1. 自动综述 / Topic Survey
 
 ```text
 STORM / GPT Researcher
@@ -110,7 +113,7 @@ STORM / GPT Researcher
 
 适合：自动调研主题、生成综述大纲、整理引用、对本地论文库做问答。
 
-### 2. Personal Research Agent
+### 2. 个人科研助手 / Personal Research Agent
 
 ```text
 LangGraph / AutoGen / CrewAI
@@ -119,35 +122,33 @@ LangGraph / AutoGen / CrewAI
 + Dify / Open WebUI
 ```
 
-适合：构建自己的科研助手，管理论文、想法、实验记录和知识库。
+适合：管理论文、想法、实验记录、代码库和研究知识图谱。
 
-### 3. Paper Engineering / Reproduction Agent
+### 3. 论文工程化 / Paper Engineering
 
 ```text
 OpenHands / Aider / SWE-agent
 + GitHub Actions
 + MLflow / W&B
-+ RAG over codebase
++ Codebase RAG
 ```
 
-适合：读论文代码、改 baseline、跑实验、整理复现状态。
+适合：读论文代码、改 baseline、跑实验、整理复现状态和实验结果。
 
 ---
 
-## Project Selection Criteria
+## 项目筛选标准
 
-每个项目建议按以下维度维护：
-
-| Dimension | Meaning |
+| 维度 | 判断问题 |
 |---|---|
-| Research Fit | 是否直接服务科研工作流 |
-| Stars / Community | 社区关注度和传播度 |
-| Activity | 最近 commit、issue、release 是否活跃 |
-| Local Runnable | 是否容易本地运行，是否支持私有文档 |
-| Citation Quality | 是否支持来源追踪、引用、证据链 |
-| Extensibility | 是否支持自定义模型、检索器、工具、MCP、API |
-| Reproducibility | 是否有 demo、examples、docker、benchmark |
-| License | 是否适合研究和二次开发 |
+| 科研适配度 | 它是否直接服务科研流程，而不是泛泛的聊天或娱乐工具？ |
+| 社区关注度 | 是否有较高 Star、讨论度、使用案例或论文引用？ |
+| 活跃度 | 最近 commit、issue、release 是否活跃？ |
+| 可运行性 | 是否容易本地运行？是否支持私有文档和本地论文库？ |
+| 引用质量 | 是否支持来源追踪、引用、证据链和可验证输出？ |
+| 可扩展性 | 是否支持自定义模型、检索器、工具、MCP、API？ |
+| 可复现性 | 是否有 demo、examples、docker、benchmark 或测试？ |
+| 许可证 | 是否适合研究、复现和二次开发？ |
 
 推荐分级：
 
@@ -158,7 +159,7 @@ OpenHands / Aider / SWE-agent
 
 ---
 
-## Repository Plan
+## 仓库结构规划
 
 ```text
 ai-researcher-hub/
@@ -182,21 +183,22 @@ ai-researcher-hub/
 
 ---
 
-## Roadmap
+## 路线图
 
-- [x] Initialize AI Researcher Hub.
-- [x] Add general AI research repository index.
-- [x] Add automated research project index.
-- [x] Put featured automated-research links directly in README.
-- [ ] Add `data/projects.yaml` as a machine-readable project database.
-- [ ] Add `PROJECT_SCORECARD.md` for standardized project evaluation.
-- [ ] Add `refresh_github_stats.py` to update stars, forks, issues, and last commit.
-- [ ] Add reproducibility notes for STORM, GPT Researcher, PaperQA2, and Open Deep Research.
-- [ ] Add an automated research workflow guide in Chinese.
+- [x] 初始化 AI Researcher Hub。
+- [x] 增加 AI research 通用仓库索引。
+- [x] 增加自动科研项目聚合索引。
+- [x] 将精选自动科研项目链接放到 README 首页。
+- [x] 增加中英文切换入口，默认简体中文。
+- [ ] 增加 `data/projects.yaml` 机器可读项目库。
+- [ ] 增加 `PROJECT_SCORECARD.md` 标准化项目评分卡。
+- [ ] 增加 `refresh_github_stats.py` 自动刷新 stars、forks、issues、last commit。
+- [ ] 为 STORM、GPT Researcher、PaperQA2、Open Deep Research 增加复现笔记。
+- [ ] 增加中文自动科研工作流指南。
 
 ---
 
-## Maintenance Principles
+## 维护原则
 
 1. 优先收录真正服务科研流程的项目，而不是泛泛收集所有 AI 工具。
 2. Star 数只作为参考，必须结合活跃度、可运行性、引用质量和科研适配度判断。
@@ -206,7 +208,7 @@ ai-researcher-hub/
 
 ---
 
-## Contribution Ideas
+## 贡献方向
 
 欢迎补充：
 
@@ -217,4 +219,51 @@ ai-researcher-hub/
 - Paper QA / Deep Research / Research Agent benchmark
 - 中文使用指南
 
-A good entry should answer: **What research workflow does this project automate, and can a researcher actually run it?**
+一个好的条目应该回答：**这个项目自动化了哪一类科研流程？研究者能不能真实跑起来？**
+
+---
+
+<a id="english"></a>
+
+## English
+
+<p align="right"><a href="#简体中文">Back to 简体中文</a></p>
+
+**AI Researcher Hub** is a curated hub for high-quality open-source projects that support automated research workflows, including deep research agents, scientific paper QA, literature review automation, research agents, coding agents, and evaluation tools.
+
+This repository is designed as:
+
+<table>
+  <tr>
+    <td><strong>Automated Research Project Index</strong><br/>Curated projects for deep research, paper QA, survey generation, research agents, and coding agents.</td>
+    <td><strong>AI Research Workflow Hub</strong><br/>A structured map from literature search and paper reading to experiment reproduction and evaluation.</td>
+    <td><strong>Paper Engineering Hub</strong><br/>A practical space for baseline reproduction, code reading, experiment tracking, and research evaluation.</td>
+  </tr>
+</table>
+
+### Featured Projects
+
+| Category | Projects |
+|---|---|
+| Deep Research | [STORM](https://github.com/stanford-oval/storm), [GPT Researcher](https://github.com/assafelovic/gpt-researcher), [Open Deep Research](https://github.com/langchain-ai/open_deep_research), [dzhng/deep-research](https://github.com/dzhng/deep-research), [Alibaba DeepResearch](https://github.com/Alibaba-NLP/DeepResearch), [Skywork DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) |
+| Paper QA / Scientific RAG | [PaperQA2](https://github.com/Future-House/paper-qa), [OpenPaper](https://github.com/khoj-ai/openpaper), [LlamaIndex](https://github.com/run-llama/llama_index), [LangChain](https://github.com/langchain-ai/langchain), [R2R](https://github.com/SciPhi-AI/R2R) |
+| Research Agent Frameworks | [LangGraph](https://github.com/langchain-ai/langgraph), [AutoGen](https://github.com/microsoft/autogen), [CrewAI](https://github.com/crewAIInc/crewAI), [MetaGPT](https://github.com/FoundationAgents/MetaGPT), [Dify](https://github.com/langgenius/dify) |
+| Code / Experiment Agents | [OpenHands](https://github.com/All-Hands-AI/OpenHands), [Aider](https://github.com/Aider-AI/aider), [SWE-agent](https://github.com/SWE-agent/SWE-agent) |
+| Evaluation | [RAGAS](https://github.com/explodinggradients/ragas), [promptfoo](https://github.com/promptfoo/promptfoo), [DeepEval](https://github.com/confident-ai/deepeval), [OpenAI Evals](https://github.com/openai/evals), [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) |
+
+### Indexes
+
+| File | Purpose |
+|---|---|
+| [`docs/AUTO_RESEARCH_PROJECTS.md`](docs/AUTO_RESEARCH_PROJECTS.md) | Curated automated research project index. |
+| [`docs/AI_RESEARCH_REPOS.md`](docs/AI_RESEARCH_REPOS.md) | General AI research repository index. |
+
+### Recommended Stacks
+
+| Scenario | Stack |
+|---|---|
+| Literature Review | STORM / GPT Researcher + PaperQA2 + LlamaIndex / LangGraph + RAGAS |
+| Personal Research Agent | LangGraph / AutoGen / CrewAI + Open Deep Research + LlamaIndex / R2R |
+| Paper Engineering | OpenHands / Aider / SWE-agent + GitHub Actions + MLflow / W&B + Codebase RAG |
+
+A good project entry should answer: **What research workflow does this project automate, and can a researcher actually run it?**
